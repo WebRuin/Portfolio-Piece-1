@@ -1,0 +1,29 @@
+.twitter {
+  background: #07dee6;
+  color: #fff;
+  padding-bottom: 3rem; }
+  .twitter .twitter-wrapper {
+    width: 80%;
+    margin: 0 auto; }
+  .twitter nav {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    flex-wrap: wrap;
+    align-items: center; }
+    .twitter nav h2 {
+      color: #fff;
+      display: block;
+      flex: 1;
+      padding-top: 20px;
+      position: relative; }
+      .twitter nav h2:after {
+        position: absolute;
+        content: '';
+        bottom: -5px;
+        left: 0px;
+        width: 40px;
+        height: 2px;
+        background-color: #fff; }
+  .twitter .bold {
+    font-weight: 700; }

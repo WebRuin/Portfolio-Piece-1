@@ -1,0 +1,32 @@
+@import 'colors';
+@import 'mixins';
+
+.about {
+  min-height: 30vw;
+  padding: 2rem 0;
+  background: linear-gradient($main-highlight-alpha, $main-highlight-alpha),
+              url('../images/images.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .about-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    left,
+    right {
+      width: 48%;
+    }
+
+    .left {
+      h2 {
+        @include h2($main-text-color);
+      }
+    }
+    
+  }
+}

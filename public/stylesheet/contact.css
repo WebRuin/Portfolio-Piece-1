@@ -1,0 +1,57 @@
+.contact {
+  padding: 2rem 0;
+  background-color: #373f3f;
+  background: linear-gradient(rgba(16, 20, 20, 0.5), rgba(16, 20, 20, 0.5)), url("../images/joe.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .contact .contact-wrapper {
+    width: 80%;
+    margin: 0 auto; }
+    .contact .contact-wrapper .header h2 {
+      text-transform: uppercase;
+      color: #fff;
+      display: block;
+      flex: 1;
+      padding-top: 20px;
+      position: relative;
+      margin-bottom: 2rem; }
+      .contact .contact-wrapper .header h2:after {
+        position: absolute;
+        content: '';
+        bottom: -5px;
+        left: 0px;
+        width: 40px;
+        height: 2px;
+        background-color: #fff; }
+    .contact .contact-wrapper .contact-form {
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap; }
+      .contact .contact-wrapper .contact-form .left,
+      .contact .contact-wrapper .contact-form .right {
+        width: 48%; }
+      .contact .contact-wrapper .contact-form .right {
+        padding: 1rem; }
+      .contact .contact-wrapper .contact-form label,
+      .contact .contact-wrapper .contact-form input {
+        display: block;
+        width: 80%;
+        margin-bottom: 10px; }
+      .contact .contact-wrapper .contact-form textarea {
+        width: 96.5%; }
+      .contact .contact-wrapper .contact-form input,
+      .contact .contact-wrapper .contact-form textarea {
+        color: #fff;
+        padding: 0.5rem;
+        border: #fff 1px solid;
+        background: rgba(0, 0, 0, 0.05);
+        outline-width: 0; }
+      .contact .contact-wrapper .contact-form .submit {
+        background: #07dee6;
+        color: #fff;
+        padding: 10px;
+        margin-top: 1rem;
+        width: 25%;
+        border: none; }

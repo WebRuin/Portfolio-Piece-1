@@ -1,0 +1,15 @@
+# Dependency directory
+node_modules/
+.node_modules/
+*/node_modules
+**/node_modules
+**/*/node_modules
+
+# Webstorm projectfile and localVM
+.idea/
+vagrant/
+.vagrant
+.vagrant/
+
+# OSX folder options
+.DS_Store

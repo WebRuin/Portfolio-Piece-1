@@ -1,0 +1,42 @@
+@import 'colors';
+@import 'mixins';
+
+.testimonials {
+  min-height: 25vw;
+  padding: 2rem 0;
+
+  .testimonials-wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    .header {
+      h2 {
+        @include h2($main-background-dark);
+      }    
+    }
+
+    .qoute {
+      font-size: 1.5rem;
+      position: relative;
+      padding: 20px;
+
+      &:before {
+        font-size: 3rem;
+        content: '"';
+        position: absolute;
+        top: -20px;
+        right: 80px;
+      }     
+    }
+
+    .cite {
+      font-size: 1.25rem;
+      color: $main-highlight;
+      padding-left: 20px;
+
+      &:before {
+        content: '-';
+      }
+    }
+  }
+}

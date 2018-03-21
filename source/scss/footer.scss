@@ -1,0 +1,32 @@
+@import 'colors';
+
+.footer{
+  background-color: $main-background-dark;
+  padding: 2rem 0;
+
+  .footer-wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+
+      li {
+        padding: 0 10px;
+        border-left: $main-text-color 2px solid;
+
+        a {
+          text-decoration: none;
+          color: $main-text-color;
+        }
+
+        &:first-of-type{
+          border-left: none;
+          padding-left: 0;
+        }
+      }
+    }
+    
+  }
+}

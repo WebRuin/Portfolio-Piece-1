@@ -1,0 +1,68 @@
+@import 'colors';
+@import 'mixins';
+
+.contact {
+  padding: 2rem 0;
+  background-color: $main-background-dark;
+  background: linear-gradient($main-dark-alpha, $main-dark-alpha),
+              url("../images/joe.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .contact-wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    .header {
+      h2 {
+        @include h2 ($main-text-color)
+      }
+    }
+    
+    .contact-form {
+      color: $main-text-color;
+      display: flex;
+      flex-wrap: wrap;
+
+      .left,
+      .right {
+        width: 48%;
+      }
+
+      .right {
+        padding: 1rem;
+      }
+
+      label,
+      input {
+        display: block;
+        width: 80%;
+        margin-bottom: 10px;
+      }
+
+      textarea {
+        width: 96.5%
+      }
+        
+      input,
+      textarea {
+        color: $main-text-color;
+        padding: 0.5rem;
+        border: $main-text-color 1px solid;
+        background: rgba(0, 0, 0, 0.05);
+        outline-width: 0;
+      }
+
+      .submit {
+        background: $main-highlight;
+        color: $main-text-color;
+        padding: 10px;
+        margin-top: 1rem;
+        width: 25%;
+        border: none;
+      }
+    }
+  }
+}

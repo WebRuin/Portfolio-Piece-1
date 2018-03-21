@@ -1,0 +1,51 @@
+@import 'colors';
+@import 'mixins';
+
+.services {
+  margin: -20px 0;
+  padding-bottom: 2rem; 
+  background: $main-highlight;
+
+  .services-wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    h2 {
+      @include h2($main-text-color);
+    }
+    
+    .services-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .service {
+      width: 22%;
+      padding: 10px;
+      // text-align: center;
+      color: $main-text-color;
+      &:hover i{
+        margin-left: 5rem;
+      }
+
+      i {
+        font-size: 2.5rem;
+        transition:all 0.5s ease-in-out;
+      }
+
+      h3 {
+        font-weight: 400;
+        font-size: 1.75rem;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 15px 0;
+      }
+
+      p {
+        font-size: 0.8rem;
+        text-align: left;
+      }
+    }
+  }
+}
