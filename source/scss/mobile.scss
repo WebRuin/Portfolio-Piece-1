@@ -8,6 +8,10 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    .top {
+      height: 570px;
+    }
+
     /* Nav */
     .nav-wrapper {
       height: auto;
